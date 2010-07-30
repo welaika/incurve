@@ -9,7 +9,7 @@ module InCurve
     end
     
     def enable_actionpack
-      return if ActionView::Base.instance_methods.include_method? :incurve_css
+      return if ActionView::Base.method_defined? :incurve_css
       require 'incurve/view_helpers'
       ActionView::Base.send :include, ViewHelpers
     end    
