@@ -9,7 +9,7 @@ begin
     gem.description = %Q{InCurve provides some handy helper methods for your Rails app, letting you easily inline your CSS code.}
     gem.email = "stefano.verna@welaika.com"
     gem.homepage = "http://github.com/welaika/incurve"
-    gem.authors = ["Stefano Verna @weLaika"]
+    gem.authors = ["Stefano Verna ~ http://www.weLaika.com"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     gem.add_dependency("premailer", ">= 1.5.4")
   end
