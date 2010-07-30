@@ -1,7 +1,43 @@
-= incurve
+= InCurve
 
-Description goes here.
+InCurve provides a single, beautiful, handy helper method for your Rails app, letting you easily inline any CSS code present on your mail views.
+InCurve is just a small wrapper around the "premailer" gem.
 
+== Example
+
+If you have this mail view:
+
+  <% incurve_css do %>
+    <html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <style type="text/css">
+          body { 
+            background-color: #e6e6e6;
+            background-position: top center;
+            background-repeat: no-repeat repeat-y;
+            margin: 0;
+            padding: 0;
+          }
+        </style>
+      </head>
+      <body>
+      </body>
+    </html>
+  <% end %>
+  
+The mail you'll send will be like this:
+
+  <html>
+    <head>
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />    
+    </head>
+    <body style="background-color: #e6e6e6; background-position: top center; background-repeat: no-repeat repeat-y; margin: 0; padding: 0;">
+    </body>
+  </html>
+
+Sweet.
+  
 == Note on Patches/Pull Requests
  
 * Fork the project.
@@ -14,4 +50,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 Stefano Verna. See LICENSE for details.
+Copyright (c) 2010 weLaika. See LICENSE for details.
