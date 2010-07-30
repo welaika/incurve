@@ -5,10 +5,10 @@
 
 Gem::Specification.new do |s|
   s.name = %q{incurve}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Stefano Verna @weLaika"]
+  s.authors = ["Stefano Verna ~ http://www.weLaika.com"]
   s.date = %q{2010-07-30}
   s.description = %q{InCurve provides some handy helper methods for your Rails app, letting you easily inline your CSS code.}
   s.email = %q{stefano.verna@welaika.com}
