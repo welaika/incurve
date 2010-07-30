@@ -11,7 +11,7 @@ begin
     gem.homepage = "http://github.com/welaika/incurve"
     gem.authors = ["Stefano Verna @weLaika"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    gem.add_dependency("premailer", ">= 1.5.5")
+    gem.add_dependency("premailer", ">= 1.5.4")
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
