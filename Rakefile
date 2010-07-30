@@ -6,12 +6,12 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "incurve"
     gem.summary = %Q{Inline that damn CSS in your mail views.}
-    gem.description = %Q{incurve provides some handy helper methods for your Rails app, letting you easily inline your CSS code and auto-guess its text-only content.}
+    gem.description = %Q{InCurve provides some handy helper methods for your Rails app, letting you easily inline your CSS code.}
     gem.email = "stefano.verna@welaika.com"
     gem.homepage = "http://github.com/welaika/incurve"
-    gem.authors = ["Stefano Verna"]
+    gem.authors = ["Stefano Verna @weLaika"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    gem.add_dependency("premailer")
+    gem.add_dependency("premailer", ">= 1.5.5")
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
