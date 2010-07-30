@@ -12,7 +12,6 @@ begin
     gem.authors = ["Stefano Verna"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     gem.add_dependency("premailer")
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
