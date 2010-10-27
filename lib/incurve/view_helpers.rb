@@ -1,9 +1,9 @@
 module InCurve
   module ViewHelpers
 
-    def incurve_css(&block)
+    def incurve_css(options = {}, &block)
       c = capture(&block)
-      premailer = StringPremailer.new(StringIO.new(c))
+      premailer = StringPremailer.new(StringIO.new(c), options)
       inlined = premailer.to_inline_css
 
       if Rails::VERSION::MAJOR == 2
