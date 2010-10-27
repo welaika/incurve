@@ -7,7 +7,11 @@ module InCurve
       inlined = premailer.to_inline_css
 
       if Rails::VERSION::MAJOR == 2
-        concat(inlined, proc.binding)
+        if defined? RailsXss
+          concat(inlined.html_safe, proc.binding)
+        else
+          concat(inlined, proc.binding)
+        end
       elsif Rails::VERSION::MAJOR == 3
         inlined.html_safe
       else
