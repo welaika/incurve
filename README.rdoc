@@ -12,7 +12,7 @@ If you have this mail view:
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <style type="text/css">
-          body { 
+          body {
             background-color: #e6e6e6;
             background-position: top center;
             background-repeat: no-repeat repeat-y;
@@ -25,21 +25,21 @@ If you have this mail view:
       </body>
     </html>
   <% end %>
-  
+
 The mail you'll send will be like this:
 
   <html>
     <head>
-      <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />    
+      <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     </head>
     <body style="background-color: #e6e6e6; background-position: top center; background-repeat: no-repeat repeat-y; margin: 0; padding: 0;">
     </body>
   </html>
 
 Sweet.
-  
+
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
@@ -50,4 +50,4 @@ Sweet.
 
 == Copyright
 
-Copyright (c) 2010 weLaika. See LICENSE for details.
+Copyright (c) 2010-2018 weLaika. See LICENSE for details.
