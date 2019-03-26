@@ -50,4 +50,4 @@ Sweet.
 
 == Copyright
 
-Copyright (c) 2010-2018 weLaika. See LICENSE for details.
+Copyright (c) 2010-2019 weLaika. See LICENSE for details.
